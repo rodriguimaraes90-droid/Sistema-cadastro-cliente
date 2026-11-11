@@ -6,7 +6,6 @@ cursor.execute("CREATE TABLE IF NOT EXISTS clientes (nome TEXT, telefone TEXT, c
 banco.commit()
 
 while True:
-    # Cabeçalho Principal Organizado com Linhas Estilizadas
     print("\n" + "="*40)
     print("      SISTEMA DE CADASTRO - ADS")
     print("="*40)
@@ -39,7 +38,6 @@ while True:
         clientes = cursor.fetchall()
         
         if clientes:
-            # Cabeçalho de colunas alinhado
             print(f" {'NOME':<15} | {'TELEFONE':<12} | {'CIDADE':<15}")
             print("-"*50)
             for cliente in clientes:
